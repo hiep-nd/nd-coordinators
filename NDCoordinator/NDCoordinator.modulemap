@@ -1,0 +1,11 @@
+framework module NDCoordinator {
+  umbrella header "NDCoordinator.h"
+  
+  header "Abstracts/NDCoordinator.h"
+  header "Abstracts/NDWindowCoordinator.h"
+
+  header "Coordinators/NDWindowCoordinator.h"
+
+  export *
+  module * { export * }
+}

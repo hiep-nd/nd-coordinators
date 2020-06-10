@@ -15,5 +15,6 @@ FOUNDATION_EXPORT double NDCoordinatorVersionNumber;
 FOUNDATION_EXPORT const unsigned char NDCoordinatorVersionString[];
 
 #import <NDCoordinator/Abstracts/NDCoordinator.h>
+#import <NDCoordinator/Abstracts/NDWindowCoordinator.h>
 
 #import <NDCoordinator/Coordinators/NDWindowCoordinator.h>

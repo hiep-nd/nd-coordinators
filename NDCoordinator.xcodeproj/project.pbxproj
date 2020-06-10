@@ -64,6 +64,7 @@
 		BA0D88CE23D5B8A800D49166 /* NDWindowCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDWindowCoordinator.h; sourceTree = "<group>"; };
 		BA0D88CF23D5B8A800D49166 /* NDWindowCoordinator.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NDWindowCoordinator.mm; sourceTree = "<group>"; };
 		BA0D88DB23D5BC9E00D49166 /* NDWindowCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDWindowCoordinator.h; sourceTree = "<group>"; };
+		BA241A972490EB4700CC5383 /* NDCoordinator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = NDCoordinator.modulemap; sourceTree = "<group>"; };
 		BAE4BD502477B30C00580B92 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BAE4BD512477B30C00580B92 /* .swift-format */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-format"; sourceTree = "<group>"; };
 		BAE4BD522477B30C00580B92 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				BA0D88C823D5B7D800D49166 /* Abstracts */,
 				BA0D88CD23D5B86B00D49166 /* Coordinators */,
 				BA0D88B123D5B7B600D49166 /* NDCoordinator.h */,
+				BA241A972490EB4700CC5383 /* NDCoordinator.modulemap */,
 				BA0D88B223D5B7B600D49166 /* Info.plist */,
 			);
 			path = NDCoordinator;
