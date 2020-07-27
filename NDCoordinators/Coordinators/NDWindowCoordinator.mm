@@ -1,12 +1,12 @@
 //
 //  NDWindowCoordinator.mm
-//  NDCoordinator
+//  NDCoordinators
 //
 //  Created by Nguyen Duc Hiep on 1/20/20.
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDCoordinator/Coordinators/NDWindowCoordinator.h>
+#import <NDCoordinators/Coordinators/NDWindowCoordinator.h>
 
 #import <UIKit/UIKit.h>
 

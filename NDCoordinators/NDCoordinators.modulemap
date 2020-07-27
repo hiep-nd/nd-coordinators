@@ -1,5 +1,5 @@
-framework module NDCoordinator {
-  umbrella header "NDCoordinator.h"
+framework module NDCoordinators {
+  umbrella header "NDCoordinators.h"
   
   header "Abstracts/NDCoordinator.h"
   header "Abstracts/NDWindowCoordinator.h"

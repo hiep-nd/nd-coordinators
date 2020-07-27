@@ -1,17 +1,18 @@
 //
 //  NDWindowCoordinator.h
-//  NDCoordinator
+//  NDCoordinators
 //
 //  Created by Nguyen Duc Hiep on 1/20/20.
 //  Copyright © 2020 Nguyen Duc Hiep. All rights reserved.
 //
 
-#import <NDCoordinator/Abstracts/NDCoordinator.h>
+#import <NDCoordinators/Abstracts/NDCoordinator.h>
 
 @class UIWindow;
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(NDWindowCoordinatorProtocol)
 @protocol NDWindowCoordinator <NDCoordinator>
 
 @property(nonatomic, weak, readonly) UIWindow* window;

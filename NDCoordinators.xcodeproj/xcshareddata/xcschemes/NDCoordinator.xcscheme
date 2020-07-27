@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BA0D88AD23D5B7B600D49166"
-               BuildableName = "NDCoordinator.framework"
-               BlueprintName = "NDCoordinator"
-               ReferencedContainer = "container:NDCoordinator.xcodeproj">
+               BuildableName = "NDCoordinators.framework"
+               BlueprintName = "NDCoordinators"
+               ReferencedContainer = "container:NDCoordinators.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BA0D88AD23D5B7B600D49166"
-            BuildableName = "NDCoordinator.framework"
-            BlueprintName = "NDCoordinator"
-            ReferencedContainer = "container:NDCoordinator.xcodeproj">
+            BuildableName = "NDCoordinators.framework"
+            BlueprintName = "NDCoordinators"
+            ReferencedContainer = "container:NDCoordinators.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -44,7 +44,7 @@
                BlueprintIdentifier = "BA0D88B623D5B7B600D49166"
                BuildableName = "NDCoordinatorTests.xctest"
                BlueprintName = "NDCoordinatorTests"
-               ReferencedContainer = "container:NDCoordinator.xcodeproj">
+               ReferencedContainer = "container:NDCoordinators.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BA0D88AD23D5B7B600D49166"
-            BuildableName = "NDCoordinator.framework"
-            BlueprintName = "NDCoordinator"
-            ReferencedContainer = "container:NDCoordinator.xcodeproj">
+            BuildableName = "NDCoordinators.framework"
+            BlueprintName = "NDCoordinators"
+            ReferencedContainer = "container:NDCoordinators.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -79,9 +79,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BA0D88AD23D5B7B600D49166"
-            BuildableName = "NDCoordinator.framework"
-            BlueprintName = "NDCoordinator"
-            ReferencedContainer = "container:NDCoordinator.xcodeproj">
+            BuildableName = "NDCoordinators.framework"
+            BlueprintName = "NDCoordinators"
+            ReferencedContainer = "container:NDCoordinators.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
