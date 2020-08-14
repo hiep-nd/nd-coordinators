@@ -4,6 +4,7 @@ framework module NDCoordinators {
   header "Abstracts/NDCoordinator.h"
   header "Abstracts/NDWindowCoordinator.h"
 
+  header "Coordinators/NDCoordinator.h"
   header "Coordinators/NDWindowCoordinator.h"
 
   export *

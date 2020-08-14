@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "NDCoordinators"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "A implementation of coordinator pattern."
   s.description  = <<-DESC
   NDCoordinators is a small framework that support interface and a base class for coordinator pattern.
@@ -18,4 +18,6 @@ s.name         = "NDCoordinators"
   s.header_mappings_dir = 'NDCoordinators'
   s.framework = 'Foundation', 'UIKit'
   s.module_map = 'NDCoordinators/NDCoordinators.modulemap'
+  s.dependency 'NDLog', '~> 0.0.4'
+  s.dependency 'NDUtils', '~> 0.0.4'
 end

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		756F98F9A9229EB37D5116D4 /* Pods_NDCoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70537C3B16B23C9F7E4890FD /* Pods_NDCoordinators.framework */; };
 		BA0D88B823D5B7B600D49166 /* NDCoordinators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0D88AE23D5B7B600D49166 /* NDCoordinators.framework */; };
 		BA0D88BD23D5B7B600D49166 /* NDCoordinatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0D88BC23D5B7B600D49166 /* NDCoordinatorTests.m */; };
 		BA0D88BF23D5B7B600D49166 /* NDCoordinators.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0D88B123D5B7B600D49166 /* NDCoordinators.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,6 +18,11 @@
 		BA0D88DA23D5BB6C00D49166 /* NDWindowCoordinator.h in Copy Files Coordinators */ = {isa = PBXBuildFile; fileRef = BA0D88CE23D5B8A800D49166 /* NDWindowCoordinator.h */; };
 		BA0D88DD23D5BC9E00D49166 /* NDWindowCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0D88DB23D5BC9E00D49166 /* NDWindowCoordinator.h */; };
 		BA0D88DF23D5C06000D49166 /* NDWindowCoordinator.h in Copy Files Abstracts */ = {isa = PBXBuildFile; fileRef = BA0D88DB23D5BC9E00D49166 /* NDWindowCoordinator.h */; };
+		BA3379A324E158F20061B1DC /* NDCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = BA3379A124E158F20061B1DC /* NDCoordinator.h */; };
+		BA3379A524E15A840061B1DC /* NDCoordinator.h in Copy Files Coordinators */ = {isa = PBXBuildFile; fileRef = BA3379A124E158F20061B1DC /* NDCoordinator.h */; };
+		BA3379A724E15B2D0061B1DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3379A624E15B2D0061B1DC /* UIKit.framework */; platformFilter = ios; };
+		BA3379A924E15B3D0061B1DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA3379A824E15B3C0061B1DC /* Foundation.framework */; };
+		BA3379AD24E1624B0061B1DC /* NDCoordinator.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA3379A224E158F20061B1DC /* NDCoordinator.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,7 @@
 			dstPath = Headers/Coordinators;
 			dstSubfolderSpec = 1;
 			files = (
+				BA3379A524E15A840061B1DC /* NDCoordinator.h in Copy Files Coordinators */,
 				BA0D88DA23D5BB6C00D49166 /* NDWindowCoordinator.h in Copy Files Coordinators */,
 			);
 			name = "Copy Files Coordinators";
@@ -56,6 +63,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		70537C3B16B23C9F7E4890FD /* Pods_NDCoordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NDCoordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		869EFE61B69167CED20FCE83 /* Pods-NDCoordinators.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDCoordinators.debug.xcconfig"; path = "Target Support Files/Pods-NDCoordinators/Pods-NDCoordinators.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0D88AE23D5B7B600D49166 /* NDCoordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NDCoordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0D88B123D5B7B600D49166 /* NDCoordinators.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDCoordinators.h; sourceTree = "<group>"; };
 		BA0D88B223D5B7B600D49166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,11 +76,16 @@
 		BA0D88CF23D5B8A800D49166 /* NDWindowCoordinator.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NDWindowCoordinator.mm; sourceTree = "<group>"; };
 		BA0D88DB23D5BC9E00D49166 /* NDWindowCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDWindowCoordinator.h; sourceTree = "<group>"; };
 		BA241A972490EB4700CC5383 /* NDCoordinators.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = NDCoordinators.modulemap; sourceTree = "<group>"; };
+		BA3379A124E158F20061B1DC /* NDCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDCoordinator.h; sourceTree = "<group>"; };
+		BA3379A224E158F20061B1DC /* NDCoordinator.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NDCoordinator.mm; sourceTree = "<group>"; };
+		BA3379A624E15B2D0061B1DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BA3379A824E15B3C0061B1DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BAE4BD502477B30C00580B92 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		BAE4BD512477B30C00580B92 /* .swift-format */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-format"; sourceTree = "<group>"; };
 		BAE4BD522477B30C00580B92 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BAE4BD532477B30C00580B92 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BAE4BD542477B30C00580B92 /* NDCoordinators.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NDCoordinators.podspec; sourceTree = "<group>"; };
+		C5D0FBA60189793F40EDBCD2 /* Pods-NDCoordinators.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDCoordinators.release.xcconfig"; path = "Target Support Files/Pods-NDCoordinators/Pods-NDCoordinators.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756F98F9A9229EB37D5116D4 /* Pods_NDCoordinators.framework in Frameworks */,
+				BA3379A924E15B3D0061B1DC /* Foundation.framework in Frameworks */,
+				BA3379A724E15B2D0061B1DC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +110,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07B2BD355DCEE8D7DF657EF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				869EFE61B69167CED20FCE83 /* Pods-NDCoordinators.debug.xcconfig */,
+				C5D0FBA60189793F40EDBCD2 /* Pods-NDCoordinators.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		26DDF50BEA9ED85B451D8D77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA3379A824E15B3C0061B1DC /* Foundation.framework */,
+				BA3379A624E15B2D0061B1DC /* UIKit.framework */,
+				70537C3B16B23C9F7E4890FD /* Pods_NDCoordinators.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA0D88A423D5B7B600D49166 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +136,8 @@
 				BA0D88B023D5B7B600D49166 /* NDCoordinators */,
 				BA0D88BB23D5B7B600D49166 /* NDCoordinatorTests */,
 				BA0D88AF23D5B7B600D49166 /* Products */,
+				07B2BD355DCEE8D7DF657EF8 /* Pods */,
+				26DDF50BEA9ED85B451D8D77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +183,8 @@
 		BA0D88CD23D5B86B00D49166 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				BA3379A124E158F20061B1DC /* NDCoordinator.h */,
+				BA3379A224E158F20061B1DC /* NDCoordinator.mm */,
 				BA0D88CE23D5B8A800D49166 /* NDWindowCoordinator.h */,
 				BA0D88CF23D5B8A800D49166 /* NDWindowCoordinator.mm */,
 			);
@@ -172,6 +212,7 @@
 			files = (
 				BA0D88BF23D5B7B600D49166 /* NDCoordinators.h in Headers */,
 				BA0D88DD23D5BC9E00D49166 /* NDWindowCoordinator.h in Headers */,
+				BA3379A324E158F20061B1DC /* NDCoordinator.h in Headers */,
 				BA0D88CB23D5B82100D49166 /* NDCoordinator.h in Headers */,
 				BA0D88D023D5B8A800D49166 /* NDWindowCoordinator.h in Headers */,
 			);
@@ -184,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA0D88C223D5B7B600D49166 /* Build configuration list for PBXNativeTarget "NDCoordinators" */;
 			buildPhases = (
+				04F056306FC0C319E5A697E2 /* [CP] Check Pods Manifest.lock */,
 				BA0D88A923D5B7B600D49166 /* Headers */,
 				BA0D88D723D5BB3000D49166 /* Copy Files Abstracts */,
 				BA0D88D923D5BB5C00D49166 /* Copy Files Coordinators */,
@@ -271,11 +313,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04F056306FC0C319E5A697E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NDCoordinators-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA0D88AA23D5B7B600D49166 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3379AD24E1624B0061B1DC /* NDCoordinator.mm in Sources */,
 				BA0D88D123D5B8A800D49166 /* NDWindowCoordinator.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +487,7 @@
 		};
 		BA0D88C323D5B7B600D49166 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 869EFE61B69167CED20FCE83 /* Pods-NDCoordinators.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
@@ -444,6 +513,7 @@
 		};
 		BA0D88C423D5B7B600D49166 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D0FBA60189793F40EDBCD2 /* Pods-NDCoordinators.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
