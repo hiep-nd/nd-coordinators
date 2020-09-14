@@ -7,6 +7,6 @@ target 'NDCoordinators' do
 
   # Pods for NDCoordinators
   pod 'NDLog', :path => '../NDLog'
-  pod 'NDUtils', :path => '../NDUtils'
+  pod 'NDUtils/objc', :path => '../NDUtils'
 
 end

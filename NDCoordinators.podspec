@@ -9,7 +9,7 @@ s.name         = "NDCoordinators"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Nguyen Duc Hiep" => "hiep.nd@gmail.com" }
   s.ios.deployment_target = '9.0'
-  s.tvos.deployment_target = '9.0'
+  #s.tvos.deployment_target = '9.0'
   s.swift_versions = ['4.0', '5.1', '5.2']
   #s.source        = { :http => 'file:' + URI.escape(__dir__) + '/' }
   s.source       = { :git => "https://github.com/hiep-nd/nd-coordinator.git", :tag => "Pod-#{s.version}" }
@@ -18,6 +18,6 @@ s.name         = "NDCoordinators"
   s.header_mappings_dir = 'NDCoordinators'
   s.framework = 'Foundation', 'UIKit'
   s.module_map = 'NDCoordinators/NDCoordinators.modulemap'
-  s.dependency 'NDLog', '~> 0.0.4'
-  s.dependency 'NDUtils', '~> 0.0.4'
+  s.dependency 'NDLog', '~> 0.0.5'
+  s.dependency 'NDUtils/objc', '~> 0.0.4'
 end
