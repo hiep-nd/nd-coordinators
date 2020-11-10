@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "NDCoordinators"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A implementation of coordinator pattern."
   s.description  = <<-DESC
   NDCoordinators is a small framework that support interface and a base class for coordinator pattern.
@@ -14,10 +14,42 @@ s.name         = "NDCoordinators"
   #s.source        = { :http => 'file:' + URI.escape(__dir__) + '/' }
   s.source       = { :git => "https://github.com/hiep-nd/nd-coordinator.git", :tag => "Pod-#{s.version}" }
   s.requires_arc   = true
-  s.source_files  = "NDCoordinators/**/*.{h,m,mm}"
-  s.header_mappings_dir = 'NDCoordinators'
-  s.framework = 'Foundation', 'UIKit'
-  s.module_map = 'NDCoordinators/NDCoordinators.modulemap'
-  s.dependency 'NDLog', '~> 0.0.5'
-  s.dependency 'NDUtils/objc', '~> 0.0.4'
+
+  s.subspec 'Core' do |ss|
+    ss.source_files  = "Sources/Core/*.{h,m,mm}"
+
+    ss.framework = 'Foundation'
+  end
+
+  s.subspec 'Abstracts' do |ss|
+    ss.source_files  = "Sources/Abstracts/*.{h,m,mm}"
+
+    ss.framework = 'Foundation'
+
+    ss.dependency 'NDCoordinators/Core'
+  end
+
+  s.subspec 'Coordinators' do |ss|
+    ss.source_files  = "Sources/Coordinators/*.{h,m,mm}"
+
+    ss.framework = 'Foundation', 'UIKit'
+
+    ss.dependency 'NDCoordinators/Abstracts'
+
+    ss.dependency 'NDLog', '~> 0.0.6'
+    ss.dependency 'NDUtils/objc', '~> 0.0.5'
+  end
+
+  s.subspec 'ObjC' do |ss|
+    ss.dependency 'NDCoordinators/Core'
+    ss.dependency 'NDCoordinators/Abstracts'
+    ss.dependency 'NDCoordinators/Coordinators'
+  end
+
+  s.subspec 'Swift' do |ss|
+#    ss.source_files  = "Sources/Swift/*.{h,m,mm,swift}"
+    ss.dependency 'NDCoordinators/ObjC'
+  end
+
+  s.default_subspec = 'Swift'
 end

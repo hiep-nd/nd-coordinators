@@ -1,24 +1,47 @@
 PODS:
-  - NDLog (0.0.4)
-  - NDUtils/Core (0.0.4)
-  - NDUtils/objc (0.0.4):
-    - NDLog (~> 0.0.4)
+  - NDCoordinators (0.0.5):
+    - NDCoordinators/Swift (= 0.0.5)
+  - NDCoordinators/Abstracts (0.0.5):
+    - NDCoordinators/Core
+  - NDCoordinators/Coordinators (0.0.5):
+    - NDCoordinators/Abstracts
+    - NDLog (~> 0.0.6)
+    - NDUtils/objc (~> 0.0.5)
+  - NDCoordinators/Core (0.0.5)
+  - NDCoordinators/ObjC (0.0.5):
+    - NDCoordinators/Abstracts
+    - NDCoordinators/Coordinators
+    - NDCoordinators/Core
+  - NDCoordinators/Swift (0.0.5):
+    - NDCoordinators/ObjC
+  - NDLog (0.0.6.1):
+    - NDLog/Swift (= 0.0.6.1)
+  - NDLog/Core (0.0.6.1)
+  - NDLog/Swift (0.0.6.1):
+    - NDLog/Core
+  - NDUtils/Core (0.0.5)
+  - NDUtils/objc (0.0.5):
+    - NDLog (~> 0.0.6)
     - NDUtils/Core
 
 DEPENDENCIES:
+  - NDCoordinators (from `.`)
   - NDLog (from `../NDLog`)
   - NDUtils/objc (from `../NDUtils`)
 
 EXTERNAL SOURCES:
+  NDCoordinators:
+    :path: "."
   NDLog:
     :path: "../NDLog"
   NDUtils:
     :path: "../NDUtils"
 
 SPEC CHECKSUMS:
-  NDLog: f84c4c42520a954db34fa487d88a9bcc2ee0100b
-  NDUtils: 8d6c354d40db38eb568ca42c4b6e02e3d03f6449
+  NDCoordinators: 231a13842af344c5b97de316f3f1aa904d5b4923
+  NDLog: 1e996efb979679f547dcf729a955fe92577ed2c5
+  NDUtils: 1a72e3cfd4f1510b261999c0f26f17648c033ac9
 
-PODFILE CHECKSUM: 70ff8d9699b052072ad307ce5ea6df6a8869ef14
+PODFILE CHECKSUM: a13673f2ef991f59ee705692647325f4a9adcd3d
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3
