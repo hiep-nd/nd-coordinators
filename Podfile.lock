@@ -1,28 +1,46 @@
 PODS:
-  - NDCoordinators (0.0.5):
-    - NDCoordinators/Swift (= 0.0.5)
-  - NDCoordinators/Abstracts (0.0.5):
-    - NDCoordinators/Core
-  - NDCoordinators/Coordinators (0.0.5):
-    - NDCoordinators/Abstracts
-    - NDLog (~> 0.0.6)
-    - NDUtils/objc (~> 0.0.5)
-  - NDCoordinators/Core (0.0.5)
-  - NDCoordinators/ObjC (0.0.5):
+  - NDCoordinators (0.0.5.1):
+    - NDCoordinators/Swift (= 0.0.5.1)
+  - NDCoordinators/Abstracts (0.0.5.1):
+    - NDCoordinators/Abstracts_Swift
+  - NDCoordinators/Abstracts_ObjC (0.0.5.1):
+    - NDCoordinators/Core_ObjC
+  - NDCoordinators/Abstracts_Swift (0.0.5.1):
+    - NDCoordinators/Abstracts_ObjC
+  - NDCoordinators/Coordinators (0.0.5.1):
+    - NDCoordinators/Coordinators_Swift
+  - NDCoordinators/Coordinators_ObjC (0.0.5.1):
+    - NDCoordinators/Abstracts_ObjC
+    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/objc_ObjC (~> 0.0.5)
+  - NDCoordinators/Coordinators_Swift (0.0.5.1):
+    - NDCoordinators/Coordinators_ObjC
+  - NDCoordinators/Core (0.0.5.1):
+    - NDCoordinators/Core_Swift
+  - NDCoordinators/Core_ObjC (0.0.5.1)
+  - NDCoordinators/Core_Swift (0.0.5.1):
+    - NDCoordinators/Core_ObjC
+  - NDCoordinators/Swift (0.0.5.1):
     - NDCoordinators/Abstracts
     - NDCoordinators/Coordinators
     - NDCoordinators/Core
-  - NDCoordinators/Swift (0.0.5):
-    - NDCoordinators/ObjC
-  - NDLog (0.0.6.1):
-    - NDLog/Swift (= 0.0.6.1)
-  - NDLog/Core (0.0.6.1)
-  - NDLog/Swift (0.0.6.1):
-    - NDLog/Core
-  - NDUtils/Core (0.0.5)
-  - NDUtils/objc (0.0.5):
-    - NDLog (~> 0.0.6)
-    - NDUtils/Core
+  - NDLog (0.0.6.3):
+    - NDLog/Swift (= 0.0.6.3)
+  - NDLog/Core_ObjC (0.0.6.3)
+  - NDLog/Core_Swift (0.0.6.3):
+    - NDLog/Core_ObjC
+  - NDLog/ObjC (0.0.6.3):
+    - NDLog/Core_ObjC
+  - NDLog/Swift (0.0.6.3):
+    - NDLog/Core_Swift
+  - NDUtils/Core_ObjC (0.0.5.1)
+  - NDUtils/objc (0.0.5.1):
+    - NDUtils/objc_Swift
+  - NDUtils/objc_ObjC (0.0.5.1):
+    - NDLog/ObjC (~> 0.0.6)
+    - NDUtils/Core_ObjC
+  - NDUtils/objc_Swift (0.0.5.1):
+    - NDUtils/objc_ObjC
 
 DEPENDENCIES:
   - NDCoordinators (from `.`)
@@ -38,9 +56,9 @@ EXTERNAL SOURCES:
     :path: "../NDUtils"
 
 SPEC CHECKSUMS:
-  NDCoordinators: 231a13842af344c5b97de316f3f1aa904d5b4923
-  NDLog: 1e996efb979679f547dcf729a955fe92577ed2c5
-  NDUtils: 1a72e3cfd4f1510b261999c0f26f17648c033ac9
+  NDCoordinators: 0845bc42dc4f86a8104678ccdd953c1662cf2413
+  NDLog: 783141ece6ac6a398262145b59cc7c27b80ab58d
+  NDUtils: aa4bbf2c741cf5d9b53276beb0cff3b7a365b7b2
 
 PODFILE CHECKSUM: a13673f2ef991f59ee705692647325f4a9adcd3d
 
