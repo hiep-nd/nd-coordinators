@@ -11,6 +11,7 @@ target 'Samples' do
   pod 'NDCoordinators', :path => '.'
 #
   pod 'NDLog', :path => '../NDLog'
+  pod 'NDMVVM', :path => '../NDMVVM'
   pod 'NDUtils/objc', :path => '../NDUtils'
 
 end

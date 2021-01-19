@@ -64,16 +64,37 @@ s.name         = "NDCoordinators"
     ss.dependency 'NDCoordinators/Coordinators_Swift'
   end
 
+  s.subspec 'NDMVVM_ObjC' do |ss|
+    ss.dependency 'NDMVVM/ObjC', '~> 0.0.4.2'
+  end
+
+  s.subspec 'NDMVVM_Swift' do |ss|
+    ss.source_files  = "Sources/NDMVVM_Swift/*.{h,m,mm,swift}"
+
+    ss.dependency 'NDCoordinators/Abstracts_Swift'
+    ss.dependency 'NDCoordinators/NDMVVM_ObjC'
+    ss.dependency 'NDLog/Swift'
+    ss.dependency 'NDMVVM/Swift', '~> 0.0.4.2'
+    ss.dependency 'NDModificationOperators/Swift'
+    ss.dependency 'NDUtils/UIKit_Swift', '~> 0.0.5.2'
+  end
+
+  s.subspec 'NDMVVM' do |ss|
+    ss.dependency 'NDCoordinators/NDMVVM_Swift'
+  end
+
   s.subspec 'ObjC' do |ss|
     ss.dependency 'NDCoordinators/Core_ObjC'
     ss.dependency 'NDCoordinators/Abstracts_ObjC'
     ss.dependency 'NDCoordinators/Coordinators_ObjC'
+    ss.dependency 'NDCoordinators/NDMVVM_ObjC'
   end
 
   s.subspec 'Swift' do |ss|
     ss.dependency 'NDCoordinators/Core'
     ss.dependency 'NDCoordinators/Abstracts'
     ss.dependency 'NDCoordinators/Coordinators'
+    ss.dependency 'NDCoordinators/NDMVVM'
   end
 
   s.default_subspec = 'Swift'
